@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Present & English Culture Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TELA INICIAL -->
+  <div id="start-screen">
+    <h1>🎓 Simple Present & English Culture Quiz</h1>
+    <p>Test your grammar and UK knowledge!</p>
+
+    <label for="difficulty-select">Choose difficulty:</label>
+    <select id="difficulty-select">
+      <option value="random">Random</option>
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <br><br>
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+  <!-- QUIZ -->
+  <div id="quiz-box" class="hidden">
+    <p id="question" class="difficulty"></p>
+    <div>
+      <button class="option-btn" onclick="chooseOption(0)"></button>
+      <button class="option-btn" onclick="chooseOption(1)"></button>
+      <button class="option-btn" onclick="chooseOption(2)"></button>
+    </div>
+    <p id="feedback"></p>
+    <button id="next-btn" style="display: none;">Next</button>
+  </div>
+
+  <!-- RESULTADO FINAL -->
+  <div id="result" class="hidden">
+    <h2>Quiz Finished!</h2>
+    <p>Your score: <span id="score"></span>/10</p>
+    <button id="restart-btn">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

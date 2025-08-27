@@ -1,0 +1,146 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+#start-screen, #quiz-box, #result {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+h1::before {
+  content: "🎓";
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+select, button {
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid #6B73FF;
+  background: #fff;
+  color: #6B73FF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+select:hover, button:hover {
+  background: #6B73FF;
+  color: #fff;
+}
+
+button:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  border-color: #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+#question {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.option-btn {
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #6B73FF;
+  background: #f0f4ff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.option-btn:hover:not(:disabled) {
+  background-color: #6B73FF;
+  color: #fff;
+  border-color: #4a57d4;
+}
+
+.option-btn:disabled {
+  cursor: default;
+}
+
+#feedback {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  min-height: 30px;
+}
+
+#feedback.correct {
+  color: #2a9d8f;
+}
+
+#feedback.wrong {
+  color: #e76f51;
+}
+
+#next-btn, #restart-btn {
+  background: #2a9d8f;
+  border-color: #2a9d8f;
+  color: white;
+  padding: 12px 25px;
+  font-weight: 700;
+  border-radius: 50px;
+}
+
+#next-btn:hover, #restart-btn:hover {
+  background: #1f6f6a;
+  border-color: #1f6f6a;
+}
+
+#result p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #264653;
+}
