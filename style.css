@@ -6,8 +6,15 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* !! ATENÇÃO: ESTE CÓDIGO NÃO FUNCIONARÁ COMO ESPERADO !! */
 body {
-  background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+  /* O navegador não consegue carregar uma PÁGINA WEB como imagem de fundo */
+  background-image: url('https://br.freepik.com/vetores-gratis/fundo-de-escola-de-ingles-de-design-plano_28732098.htm');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #333;
   display: flex;
   justify-content: center;
@@ -15,6 +22,7 @@ body {
   height: 100vh;
   padding: 20px;
 }
+
 
 #start-screen, #quiz-box, #result {
   background: #fff;
