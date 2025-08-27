@@ -6,21 +6,12 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* !! ATENÇÃO: ESTE CÓDIGO NÃO FUNCIONARÁ COMO ESPERADO !! */
-body {
-  /* O navegador não consegue carregar uma PÁGINA WEB como imagem de fundo */
-  background-image: url('1756338130212.jpg');
 
-  background-size: cover;
-  background-position: center;
+body {
+  background-image: url("1756338130212.jpg");
+  background-size: cover;   /* cobre a tela inteira */
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 20px;
+  background-position: center;
 }
 
 
@@ -152,4 +143,5 @@ button:disabled {
   font-weight: 700;
   color: #264653;
 }
+
 
