@@ -6,14 +6,15 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 body {
-  background-image: url("1756338130212.jpg");
-  background-size: cover;   /* cobre a tela inteira */
-  background-repeat: no-repeat;
-  background-position: center;
+  background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
 }
-
 
 #start-screen, #quiz-box, #result {
   background: #fff;
@@ -143,5 +144,6 @@ button:disabled {
   font-weight: 700;
   color: #264653;
 }
+
 
 
